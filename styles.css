@@ -32,3 +32,24 @@ body {
     background-color: #AAA;
     border-radius: 1vmin;
 }
+
+.tile {
+    /*- variable values set in JS - these are used for testing purposes only 
+    --x: 1;
+    --y: 1;
+    --backgrund-lightness: 80%;
+    --text-lightness: 20%;
+    --*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border-radius: 1vmin;
+    top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+    left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)) + var(--cell-gap));
+    font-weight: bold;
+    background-color: hsl(200, 50%, var(--backgrund-lightness));
+    color: hsl(200, 25%, var(--text-lightness));
+}
