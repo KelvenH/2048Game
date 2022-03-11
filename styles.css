@@ -5,17 +5,48 @@
 
 body {
     background-color:#333;
-    display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     font-size: 7.5vmin;
 }
 
-#game-board {
+.panel {
+    height: 25vh;
+    width: 100vw;
+    display:block;
+    text-align: center;
+}
 
+.panel h2 {
+    margin: 2vh 0;
+    color: hsl(200, 50%, 70%);
+    position: relative;
     
+}
+
+.panel button {
+    font-size: 2vmin;
+    position: absolute;
+    left: 45vw;
+}
+
+
+a {
+    text-decoration: none;
+    color: hsl(200, 50%, 0%);
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 70vh;
+    margin: 0;
+    font-size: 7.5vmin;
+}
+
+#game-board {
     display:grid;
     grid-template-rows: repeat(var(--grid-size), var(--cell-size));
     grid-template-columns: repeat(var(--grid-size), var(--cell-size));
